@@ -1,0 +1,110 @@
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+
+* {
+	--main-blue: #377599;
+	--dark-blue: #14384D;
+	--main-red: #A64C50;
+	--main-green: #E5E247;
+	--main-white: #eee;
+	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: var(--main-white);
+}
+
+html {
+	font-family: Lato;
+	background: var(--main-blue);
+	text-align: center;
+	scroll-behavior: smooth;
+}
+p, a {
+	font-size: 18px;
+}
+
+a {
+	text-decoration: none;
+	color: var(--main-green);
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: var(--dark-blue);
+	width: 100%;
+}
+
+nav ul {
+	padding: 0;
+	display: flex;
+	justify-content: flex-end;
+}
+
+nav li {
+	list-style: none;
+	padding: 20px 0;
+}
+
+nav a {
+	font-size: 18px;
+	padding: 20px;
+}
+
+nav a:hover {
+	text-decoration: none;
+	background: var(--main-blue);
+}
+
+h1 {
+	color: var(--main-green);
+	font-size: 5vw;
+	line-height: 1.5;
+}
+
+h2 {
+	font-size: 5vw;
+	line-height: 1.5;
+}
+
+#projects {
+	height: 100vh;
+	padding: 20vh 40px;
+	background: var(--main-red);
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px 10px;
+	grid-template-areas:
+		"header header header"
+		"content content content"
+		"content content content";
+}
+
+#projects > h2 {
+	grid-area: header;
+}
+.project {
+	background: var(--dark-blue);
+	padding: 5px;
+}
+.project > p {
+	padding: 10px;
+}
+.project > img {
+	width: 100%;
+}
+
+.project:hover p {
+	color: var(--main-green);
+}
+
+#welcome-section,
+#contact-section {
+	height: 100vh;
+	padding-top: calc(50vh - 62px);
+}
+
+@media (max-width: 500px) {
+	
+}

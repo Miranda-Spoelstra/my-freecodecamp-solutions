@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet"></link>
+    </head>
+    <body>
+        <main>
+            <h1 id="title">What do you like?</h1>
+            <p id="description">Please let met know something about yourself</p>
+            
+            <form id="survey-form">
+                <fieldset>
+                    <legend hidden>Personal information</legend>
+                    
+                    <div class="item">
+                        <label id="name-label" for="name">Name:</label>
+                        <input type="text" name="name" id="name"
+                                     placeholder="Enter your name" required>
+                    </div>
+                    
+                    <div class="item">
+                        <label id="email-label" for="email">Email:</label>
+                        <input type="email" name="email" id="email" 
+                                     placeholder="Enter your email" required>
+                    </div>
+                    
+                    <div class="item">
+                        <label id="number-label" for="age">Age:</label>
+                        <input type="number" name="age" id="number" min="16" max="99" 
+                                     placeholder="XX">
+                    </div>
+                    
+                    <div class="item">
+                        <label id="dropdown-label" for="favorite">My favorite thing:</label>
+                        <select id="dropdown">
+                            <option value="1">Frietjes</option>
+                            <option value="2">Chocolade</option>
+                            <option value="3">Mango</option>
+                        </select>
+                    </div>
+                    
+                    <div class="item">
+                        <label id="radio-label" for="choice">I would rather be a:</label>
+                        <input type="radio" name="choice" value="musquito" checked>Musquito
+                        <input type="radio" name="choice" value="elephant">Elephant
+                        <input type="radio" name="choice" value="tiger">Tiger
+                    </div>
+                    
+                    <div class="item">
+                        <label id="checkbox-label" for="scratches">I like:</label>
+                        <input type="checkbox" name="scratches" value="back">Backscratches
+                        <input type="checkbox" name="scratches" value="head">Headscratches
+                    </div>
+                    
+                    <div class="item">
+                        <label id="textarea-label" for="comments">Additional comments:</label>
+                        <textarea name="comments" id="comments" col="5" rows="5"></textarea>
+                    </div>
+                    
+                    <div class="submit">
+                        <button type="submit" id="submit">Submit</button>
+                    </div>
+                    
+                </fieldset>
+            </form>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+body {
+	font-family: Arial;
+	background: white;
+	font-size: 14px;
+}
+
+main {
+	width: 60%;
+	margin: auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+figure {
+	background: lightgray;
+	margin: 10px;
+	padding: 20px;
+	text-align: center;
+}
+
+figcaption {
+	font-style: italic;
+	margin-top: 10px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+	display: block;
+}
+
+section {
+	background: white;
+	padding: 10px;
+}
